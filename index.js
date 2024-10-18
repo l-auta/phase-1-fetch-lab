@@ -3,7 +3,7 @@ function fetchBooks() {
   return fetch('https://anapioficeandfire.com/api/books')
     .then(response=>{
       if(!response.ok){
-        throw new Error('fetch aint worked')
+        throw new Error('net error')
       }
       else{
         return response.json
